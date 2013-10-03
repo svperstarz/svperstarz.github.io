@@ -1,0 +1,3804 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>변수</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="Jekyll • Simple, blog-aware, static sites - Feed" href="/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="https://github.com/mojombo/jekyll/commits/master.atom" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/jekyll-docs-ko/css/normalize.css" />
+  <link rel="stylesheet" href="/jekyll-docs-ko/css/gridism.css" />
+  <link rel="stylesheet" href="/jekyll-docs-ko/css/style.css" />
+  <link rel="stylesheet" href="/jekyll-docs-ko/css/pygments.css" />
+  <link rel="icon" type="image/x-icon" href="/jekyll-docs-ko/favicon.png" />
+  <script src="/jekyll-docs-ko/js/modernizr-2.5.3.min.js"></script>
+</head>
+
+
+<body class="wrap">
+  <header>
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a style="font-size: inherit" href="/jekyll-docs-ko/">개요</a>
+  </li>
+  <li class="current">
+    <a style="font-size: inherit" href="/jekyll-docs-ko/docs/home/">문서</span></a>
+  </li>
+  <li class="">
+    <a style="font-size: inherit" href="/jekyll-docs-ko/news/">소식</a>
+  </li>
+  <li class="">
+    <a style="font-size: inherit" href="https://github.com/mojombo/jekyll">GitHub<span class="hide-on-mobiles"> 저장소</span></a>
+  </li>
+</ul>
+
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="/jekyll-docs-ko/">
+          <span>Jekyll</span>
+          <img src="/jekyll-docs-ko/img/logo-2x.png" width="249" height="115" alt="">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a style="font-size: inherit" href="/jekyll-docs-ko/">개요</a>
+  </li>
+  <li class="current">
+    <a style="font-size: inherit" href="/jekyll-docs-ko/docs/home/">문서</span></a>
+  </li>
+  <li class="">
+    <a style="font-size: inherit" href="/jekyll-docs-ko/news/">소식</a>
+  </li>
+  <li class="">
+    <a style="font-size: inherit" href="https://github.com/mojombo/jekyll">GitHub<span class="hide-on-mobiles"> 저장소</span></a>
+  </li>
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+
+    <section class="docs">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">문서를 선택하세요…</option>
+    <optgroup label="시작하기">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/home/">환영합니다</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/quickstart/">빠른 시작 안내</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/installation/">설치</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/usage/">기본 사용법</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/structure/">디렉토리 구조</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+      <option value="/jekyll-docs-ko/docs/configuration/">환경설정</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="컨텐츠">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/frontmatter/">머리말</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/posts/">포스트 작성하기</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/drafts/">초안 활용하기</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/pages/">페이지 생성하기</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/variables/">변수</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/migrations/">블로그 마이그레이션</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="사용자화">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/templates/">템플릿</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/permalinks/">고유주소</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/pagination/">페이지 나누기</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/plugins/">플러그인</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/extras/">부가기능</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="게시">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/github-pages/">GitHub Pages</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/deployment-methods/">게시 방법</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="기타">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/troubleshooting/">문제해결</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/sites/">Jekyll 사이트들</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/resources/">참고자료</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/upgrading/">업그레이드</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="Meta">
+      
+
+
+  
+
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/contributing/">기여하기</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/jekyll-docs-ko/docs/history/">개발 이력</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        <article>
+          <h1>변수</h1>
+          <p>Jekyll 은 사이트 내부를 검색하여 작업 대상 파일을 찾는다. <a href='../frontmatter/'>YAML 머리말</a> 를 가진 파일이 작업 대상이다. Jekyll 은 각각의 파일마다 <a href='http://wiki.shopify.com/Liquid'>Liquid 템플릿 시스템</a> 을 통해 다양한 데이터를 만들어낸다. 사용가능한 데이터 목록은 다음과 같다.</p>
+
+<h2 id='_'>전역 변수</h2>
+<div class='mobile-side-scroller'>
+<table>
+  <thead>
+    <tr>
+      <th>변수</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><code>site</code></p></td>
+      <td><p>
+
+          사이트 정보 + <code>_config.yml</code> 의 환경설정 정보.
+          더 자세한 내용은 아래 참조.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page</code></p></td>
+      <td><p>
+
+        페이지 정보 + <a href='../frontmatter/'>YAML 머리말</a>.
+        YAML 머리말에 설정된 사용자 변수도 포함된다.
+        더 자세한 내용은 아래 참조.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>content</code></p></td>
+      <td><p>
+
+        레이아웃 파일 내부의, 레이아웃에 포함된 포스트 또는 페이지 컨텐츠.
+        포스트나 페이지 파일에는 정의되어 있지 않음.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator</code></p></td>
+      <td><p>
+
+        이 변수는 환경설정 옵션 <code>paginate</code> 이
+        설정되어 있을 때 사용가능하다.
+        더 자세한 내용은 <a href='../pagination/'>Pagination</a> 를 참조.
+
+      </p></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2 id='_'>사이트 변수</h2>
+<div class='mobile-side-scroller'>
+<table>
+  <thead>
+    <tr>
+      <th>변수</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><code>site.time</code></p></td>
+      <td><p>
+
+        현재 시간 (<code>jekyll</code> 명령을 실행한 시간).
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>site.pages</code></p></td>
+      <td><p>
+
+        모든 페이지 목록.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>site.posts</code></p></td>
+      <td><p>
+
+        시간 역순의 모든 포스트 목록.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>site.related_posts</code></p></td>
+      <td><p>
+
+        포스트인 경우에, 최대 10 개의 관련 포스트가 이 변수에 담겨있다.
+        기본적으로는, 처리 속도가 빠른 대신 결과의 질이 낮은 방식을 사용한다.
+        느린 속도를 감수하고 좋은 결과를 얻으려면, <code>jekyll</code> 명령을
+        <code>--lsi</code> (latent semantic indexing) 옵션과 함께 실행하라.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>site.categories.CATEGORY</code></p></td>
+      <td><p>
+
+        <code>CATEGORY</code> 카테고리에 속한 모든 포스트 목록.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>site.tags.TAG</code></p></td>
+      <td><p>
+
+        <code>TAG</code> 태그가 붙은 모든 포스트 목록.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>site.[CONFIGURATION_DATA]</code></p></td>
+      <td><p>
+
+        명령행이나 <code>_config.yml</code> 에 설정된 모든 변수를
+        <code>site</code> 변수를 통해 사용할 수 있다.
+        예를 들어, 환경설정 파일에 <code>url: http://mysite.com</code> 가 있다면,
+        포스트나 페이지에서 <code>site.url</code> 를 사용할 수 있다.
+        Jekyll 은 <code>watch</code> 모드에서도
+        <code>_config.yml</code> 파일의 변경사항을
+        자동으로 적용하지 않는다.
+        변수의 변경사항을 적용하려면 Jekyll 을 재시작해야 한다.
+
+      </p></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2 id='_'>페이지 변수</h2>
+<div class='mobile-side-scroller'>
+<table>
+  <thead>
+    <tr>
+      <th>변수</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><code>page.content</code></p></td>
+      <td><p>
+
+        페이지의 (처리되지 않은) 실제 컨텐츠.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.title</code></p></td>
+      <td><p>
+
+        페이지의 제목.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.excerpt</code></p></td>
+      <td><p>
+
+        페이지의 (처리되지 않은) 실제 미리보기 부분.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.url</code></p></td>
+      <td><p>
+
+        도메인을 제외한, 포스트 URL.
+        슬래쉬로 시작함.
+        예시, <code>/2008/12/14/my-post.html</code>
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.date</code></p></td>
+      <td><p>
+
+        포스트에 할당된 날짜.
+        포스트의 머리말에 <code>YYYY-MM-DD HH:MM:SS</code> (UTC 기준),
+        또는 <code>YYYY-MM-DD HH:MM:SS +/-TTTT</code>
+        (UTC 오프셋을 사용한 타임 존 지정. 예시, <code>2008-12-14 10:30:00 +0900</code>)
+        형식으로 새로운 날짜/시간을 지정하여 덮어쓸 수 있다.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.id</code></p></td>
+      <td><p>
+
+        포스트에 대한 유일한 식별자 (RSS 피드에 유용함).
+        예시, <code>/2008/12/14/my-post</code>
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.categories</code></p></td>
+      <td><p>
+
+        포스트가 속한 카테고리 목록.
+        카테고리는 <code>_posts</code> 디렉토리의
+        상위 디렉토리 구조로부터 파생된다.
+        예를 들어, <code>/work/code/_posts/2008-12-24-closures.md</code> 에는
+        이 변수가 <code>['work', 'code']</code> 로 설정되어 있다.
+        이 변수는 <a href='../frontmatter/'>YAML 머리말</a> 에서도 설정할 수 있다.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.tags</code></p></td>
+      <td><p>
+
+        포스트에 붙어있는 태그 목록.
+        이 변수는 <a href='../frontmatter/'>YAML 머리말</a> 에서도 설정할 수 있다.
+
+      </p></td>
+    </tr>
+    <tr>
+      <td><p><code>page.path</code></p></td>
+      <td><p>
+
+        페이지 또는 포스트의 실제 경로.
+        활용 예시: 페이지 또는 포스트의 GitHub 소스 링크.
+        이 변수는 <a href='../frontmatter/'>YAML 머리말</a> 에서도 설정할 수 있다.
+
+      </p></td>
+    </tr>
+  </tbody>
+</table>
+</div><div class='note'>
+  <h5>ProTip™: 사용자 머리말을 사용하세요</h5>
+  <p>
+
+    모든 사용자 머리말은 <code>page</code> 로 사용할 수 있습니다.
+    예를 들어, 페이지 머리말에 <code>custom_css: true</code> 를 설정한 경우,
+    <code>page.custom_css</code> 로 해당 값을 사용할 수 있습니다.
+
+  </p>
+</div>
+<h2 id='paginator'>Paginator</h2>
+<div class='mobile-side-scroller'>
+<table>
+  <thead>
+    <tr>
+      <th>변수</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><code>paginator.per_page</code></p></td>
+      <td><p>페이지 당 포스트 수.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.posts</code></p></td>
+      <td><p>페이지에서 사용할 수 있는 포스트들.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.total_posts</code></p></td>
+      <td><p>전체 포스트 수.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.total_pages</code></p></td>
+      <td><p>전체 페이지 수.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.page</code></p></td>
+      <td><p>현재 페이지 번호.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.previous_page</code></p></td>
+      <td><p>이전 페이지 번호.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.previous_page_path</code></p></td>
+      <td><p>이전 페이지 경로.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.next_page</code></p></td>
+      <td><p>다음 페이지 번호.</p></td>
+    </tr>
+    <tr>
+      <td><p><code>paginator.next_page_path</code></p></td>
+      <td><p>다음 페이지 경로.</p></td>
+    </tr>
+  </tbody>
+</table>
+</div><div class='note info'>
+  <h5>Paginator 변수 사용 위치</h5>
+  <p>
+
+    이 변수들은 오직 인덱스 파일에서만 사용할 수 있지만,
+    <code>/blog/index.html</code> 같이 하위 디렉토리에도 해당됩니다.
+
+  </p>
+</div>
+          <div class="section-nav">
+  <div class="left align-right">
+    
+      <a href="/jekyll-docs-ko/docs/pages/" class="prev">
+        이전
+      </a>
+    
+  </div>
+  <div class="right align-left">
+    
+      <a href="/jekyll-docs-ko/docs/migrations/" class="next">
+        다음
+      </a>
+    
+  </div>
+  <div class="clear"></div>
+</div>
+
+
+        </article>
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <h4 style="font-size: inherit">시작하기</h4>
+    
+
+<ul>
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/home/">환영합니다</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/quickstart/">빠른 시작 안내</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/installation/">설치</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/usage/">기본 사용법</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/structure/">디렉토리 구조</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/configuration/">환경설정</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4 style="font-size: inherit">컨텐츠</h4>
+    
+
+<ul>
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/frontmatter/">머리말</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/posts/">포스트 작성하기</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/drafts/">초안 활용하기</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/pages/">페이지 생성하기</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class="current"><a href="/jekyll-docs-ko/docs/variables/">변수</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/migrations/">블로그 마이그레이션</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4 style="font-size: inherit">사용자화</h4>
+    
+
+<ul>
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/templates/">템플릿</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/permalinks/">고유주소</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/pagination/">페이지 나누기</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/plugins/">플러그인</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/extras/">부가기능</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4 style="font-size: inherit">게시</h4>
+    
+
+<ul>
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/github-pages/">GitHub Pages</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/deployment-methods/">게시 방법</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4 style="font-size: inherit">기타</h4>
+    
+
+<ul>
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/troubleshooting/">문제해결</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/sites/">Jekyll 사이트들</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/resources/">참고자료</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/upgrading/">업그레이드</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4 style="font-size: inherit">Meta</h4>
+    
+
+<ul>
+
+  
+
+  
+
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/contributing/">기여하기</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/jekyll-docs-ko/docs/history/">개발 이력</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>By <a href="http://tom.preston-werner.com">Tom Preston-Werner</a>, <a href="http://quaran.to/">Nick Quaranto</a>, and many more <a href="https://github.com/mojombo/jekyll/graphs/contributors">awesome&nbsp;contributors</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com">
+          <img src="/jekyll-docs-ko/img/footer-logo.png" alt="GitHub • Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- Gauges (http://gaug.es/) -->
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '503c5af6613f5d0f19000027');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
