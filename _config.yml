@@ -5,5 +5,5 @@ markdown: redcarpet
 
 name: svperstarz.github.io
 
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['README*', 'LICENSE', 'Gemfile*']
 
