@@ -5,11 +5,11 @@ date:   2013-10-04 04:54:11
 categories: jekyll
 ---
 
-Jekyll 문서를 번역함. [링크][jekyll-docs-ko]
+번역된 문서는 [jekyll-docs-ko/][jekyll-docs-ko] 에서 볼 수 있습니다.  
+Jekyll 을 처음 접하는 분들에게 도움이 됐으면 좋겠습니다.
 
-원문은 [여기][jekyll-docs]에.
-
-프로젝트는 [Jekyll GitHub 저장소][jekyll]를 확인.
+원본 문서는 [jekyllrb.com][jekyll-docs] 에 있습니다.  
+[Jekyll 프로젝트 저장소][jekyll]도 한번 살펴보세요.
 
 [jekyll-docs-ko]: /jekyll-docs-ko
 [jekyll]: https://github.com/mojombo/jekyll
