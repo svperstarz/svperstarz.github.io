@@ -5,6 +5,10 @@ pygments: true
 markdown: rdiscount
 
 name: svperstarz.github.io
+author: Moojin Jung
+subtitle: svperstarz's blog
+url: http://svperstarz.github.io
 
-exclude: ['README*', 'LICENSE', 'Gemfile*']
+exclude: ['README*', LICENSE, 'Gemfile*', feed ]
+
 

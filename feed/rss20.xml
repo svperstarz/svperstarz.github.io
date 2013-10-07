@@ -1,0 +1,60 @@
+---
+layout: none
+permalink: rss20.rss
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    >
+<channel>
+    <title xml:lang="en">svperstarz.github.io</title>
+    <link>http://svperstarz.github.io</link>
+    <description>
+        svperstarz.github.io
+    </description>
+    <language>ko-KR</language>
+    <atom:link rel="self" href="http://svperstarz.github.io/feed" type="application/rss+xml"/>
+    <!--atom:link rel="hub" href="http://pubsubhubbub.appspot.com"/-->
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+{% for post in site.posts %}
+    <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <link>http://svperstarz.github.io{{ post.url }}</link>
+        <guid isPermaLink="false">{{ post.id}}.R{{ post.revision }}</guid>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+{% if post.author != NULL %}
+    {% assign author = post.author %}
+{% else %}
+    {% assign author = site.author %}
+{% endif %}
+        <dc:creator>{{ author }}</dc:creator>
+{% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+{% endfor %}
+{% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+{% endfor %}
+        <description>
+        <![CDATA[
+{{ post.title }}
+        ]]>
+        </description>
+        <content:encoded>
+        <![CDATA[
+{{ post.content }}
+        ]]>
+        </content:encoded>
+    </item>
+{% endfor %}
+</channel>
+</rss>

@@ -3,6 +3,7 @@ layout: post
 title:  "Jekyll 한글 문서"
 date:   2013-10-04 04:54:11
 categories: jekyll
+revision: 2
 ---
 
 Jekyll 문서를 한글로 번역했습니다.  
