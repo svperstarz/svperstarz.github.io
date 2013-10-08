@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Jekyll 한글 문서"
-date:   2013-10-04 04:54:11
-categories: jekyll
-revision: 2
+date:   2013-10-04 04:54:12
+categories: translation
+tag: jekyll
 ---
+
+![jekyll logo]({{ site.url }}/jekyll-docs-ko/img/logo-2x.png)
 
 Jekyll 문서를 한글로 번역했습니다.  
 번역된 문서는 [jekyll-docs-ko][jekyll-docs-ko] 에서 볼 수 있습니다.
