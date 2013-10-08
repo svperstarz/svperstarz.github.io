@@ -8,7 +8,8 @@ name: svperstarz.github.io
 author: Moojin Jung
 subtitle: svperstarz's blog
 url: http://svperstarz.github.io
+permalink: /:year/:month/:title
+relative_permalink: false
 
 exclude: ['README*', LICENSE, 'Gemfile*', feed ]
-
 
