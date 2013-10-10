@@ -1,0 +1,29 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>svperstarz.github.io</title>
+	<link href="http://svperstarz.github.io/atom.xml" rel="self"/>
+	<link href="http://svperstarz.github.io/"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://svperstarz.github.io/</id>
+	<author>
+		<name>Moojin Jung</name>
+		<email>svperstarz@gmail.com</email>
+	</author>
+
+{% for post in site.posts %}
+	<entry>
+		<title>{{ post.title }}</title>
+		<link href="http://svperstarz.github.io{{ post.url }}"/>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<id>http://svperstarz.github.io{{ post.id }}</id>
+		<content type="html">
+{{ post.content | xml_escape }}
+		</content>
+	</entry>
+{% endfor %}
+
+</feed>
