@@ -1727,8 +1727,8 @@
 <p>앞서 <a href="../structure/">디렉토리 구조</a> 페이지에서 설명했듯이, 블로그 포스트는
 <code>_posts</code> 폴더에 들어갑니다.
 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> 이나
-<a href="http://textile.sitemonks.com/">Textile</a> 포맷의 텍스트 파일이며,
-<a href="../frontmatter/">YAML 머리말</a> 이 들어있기만 하면 HTML 페이지로 변환되어
+<a href="http://textile.sitemonks.com/">Textile</a> 형식의 텍스트 파일이며,
+<a href="../frontmatter/">YAML 머리말</a>이 들어있기만 하면 HTML 페이지로 변환되어
 사이트에 포함됩니다.</p>
 
 <h3>포스트 파일 생성하기</h3>
@@ -1757,8 +1757,8 @@
 Jekyll 은 인기있는 컨텐츠 마크업 문법 두 가지를 지원합니다:
 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> 과
 <a href="http://textile.sitemonks.com/">Textile</a>
-각 문법은 서로 다른 고유한 특징을 가지고 있으므로, 자신에게 익숙하고 필요에 맞는
-문법을 선택해야 합니다.</p>
+은 서로 다른 고유한 특징을 가지고 있으므로, 자신에게 익숙하고 필요에 맞는 문법을
+선택해야 합니다.</p>
 
 <h2>이미지와 자원 삽입하기</h2>
 
@@ -1776,14 +1776,14 @@ Jekyll 은 인기있는 컨텐츠 마크업 문법 두 가지를 지원합니다
 
 <p>포스트에 이미지를 삽입하려면:</p>
 
-<div class="highlight"><pre><code class="text">… which is shown in the screenshot below:
-![My helpful screenshot]({{ site.url }}/assets/screenshot.jpg)
+<div class="highlight"><pre><code class="text">… 은 다음 스크린샷에 나와 있습니다:
+![내 스크린샷]({{ site.url }}/assets/screenshot.jpg)
 </code></pre></div>
 
 
 <p>PDF 다운로드 링크를 삽입하려면:</p>
 
-<div class="highlight"><pre><code class="text">… you can [get the PDF]({{ site.url }}/assets/mydoc.pdf) directly.
+<div class="highlight"><pre><code class="text">… PDF 를 직접 [다운로드]({{ site.url }}/assets/mydoc.pdf) 받을 수 있습니다.
 </code></pre></div>
 
 
@@ -1806,7 +1806,7 @@ Jekyll 은 인기있는 컨텐츠 마크업 문법 두 가지를 지원합니다
 <p>포스트를 폴더로 관리하는 것은 다 잘 끝났지만, 어딘가에 포스트 목록을 두지
 않는다면 아무런 쓸모 없는 블로그가 될 것입니다. 다른 페이지 (또는
 <a href="../templates/">템플릿</a>) 에 포스트 목록을 생성하는 것은 아주 쉽습니다. <a href="http://wiki.shopify.com/Liquid">Liquid
-템플릿 언어</a> 와 그 태그 기능 덕분입니다. 여기
+템플릿 언어</a>와 그 태그 기능 덕분입니다. 여기
 블로그 포스트 링크 목록을 생성하는 방법에 대한 기본적인 예시가 있습니다:</p>
 
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;ul&gt;</span>
