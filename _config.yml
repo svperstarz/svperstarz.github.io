@@ -1,8 +1,8 @@
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
 
-markdown: rdiscount
+markdown: kramdown
 
 name: svperstarz.github.io
 author: Moojin Jung
